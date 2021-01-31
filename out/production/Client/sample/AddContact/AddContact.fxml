@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="300.0" stylesheets="@../Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddContact.AddContactController">
+    <top>
+        <Label alignment="CENTER" prefHeight="35.0" prefWidth="178.0" text="Add Contact" BorderPane.alignment="CENTER">
+            <font>
+                <Font name="System Bold" size="19.0" />
+            </font>
+        </Label>
+    </top>
+    <center>
+        <VBox alignment="CENTER" prefHeight="565.0" prefWidth="370.0" BorderPane.alignment="CENTER">
+            <children>
+                <VBox alignment="TOP_CENTER" spacing="20.0" VBox.vgrow="ALWAYS">
+                    <children>
+                        <TextField fx:id="nameField" onKeyReleased="#clearLabel" promptText="Name" />
+                        <TextField fx:id="keyField" onKeyReleased="#clearLabel" promptText="Key" />
+                    </children>
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+                </VBox>
+                <VBox alignment="CENTER">
+                    <children>
+                        <Label fx:id="errorMessage" textAlignment="CENTER" textFill="#ff0f0f" />
+                        <HBox alignment="BOTTOM_CENTER" prefHeight="42.0" prefWidth="240.0" spacing="20.0">
+                            <children>
+                                <Button fx:id="addButton" defaultButton="true" mnemonicParsing="false" onAction="#addAccount" prefWidth="70.0" text="Add" />
+                                <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#cancel" prefWidth="70.0" text="Cancel" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+            </children>
+         <BorderPane.margin>
+            <Insets left="50.0" right="50.0" />
+         </BorderPane.margin>
+        </VBox>
+    </center>
+    <bottom>
+        <VBox alignment="CENTER" prefHeight="61.0" prefWidth="300.0" BorderPane.alignment="CENTER" />
+    </bottom>
+</BorderPane>

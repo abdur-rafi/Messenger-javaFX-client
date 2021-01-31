@@ -1,0 +1,17 @@
+
+.button {
+    -fx-background-color:#ffffff;
+    -fx-border-color:#000000;
+    -fx-border-radius:10;
+}
+
+.text-field{
+    -fx-background-radius:10;
+    -fx-blend-mode:multiply;
+}
+BorderPane  {
+    -fx-background-color:#ffffff;
+}
+HBox{
+    -fx-background-color:#ffffff;
+}

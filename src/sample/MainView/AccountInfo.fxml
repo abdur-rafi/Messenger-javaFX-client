@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="300.0" stylesheets="@../Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainView.AccountInfoController">
+   <top>
+      <VBox alignment="CENTER" prefHeight="30.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Account Info">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <VBox alignment="TOP_CENTER" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" spacing="20.0">
+               <children>
+                  <ImageView fx:id="accountImage" fitHeight="120.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Images/defaultAccountImage.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="changeImage" mnemonicParsing="false" text="Change Image" />
+               </children>
+               <padding>
+                  <Insets top="30.0" />
+               </padding>
+            </VBox>
+            <VBox prefHeight="119.0" prefWidth="350.0" spacing="10.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="30.0" right="30.0" top="20.0" />
+               </padding>
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="30.0">
+                     <children>
+                        <Label prefWidth="70.0" text="Name :" />
+                        <Label fx:id="nameLabel" text="Abdur Rafi" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="30.0">
+                     <children>
+                        <Label prefWidth="70.0" text="Port    :" />
+                        <Label fx:id="portLabel" text="1000" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="30.0">
+                     <children>
+                        <Label prefWidth="70.0" text="Label  :" />
+                        <Label text="Label" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

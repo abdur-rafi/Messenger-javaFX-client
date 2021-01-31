@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="350.0" stylesheets="@../Style.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.NewMessageGroup.NewMessageGroupController">
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="340.0" prefWidth="350.0" spacing="20.0">
+               <children>
+                  <TextField fx:id="nameField" promptText="Group Name" />
+                  <ImageView fx:id="groupImageView" fitHeight="180.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Images/defaultAccountImage.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="selectImage" mnemonicParsing="false" prefHeight="33.0" prefWidth="236.0" text="Set Group Image" />
+               </children>
+               <padding>
+                  <Insets left="50.0" right="50.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="35.0" />
+               </VBox.margin>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="175.0" prefWidth="350.0">
+               <children>
+                  <HBox alignment="TOP_CENTER" prefHeight="89.0" prefWidth="350.0" spacing="20.0">
+                     <children>
+                        <Button fx:id="create" defaultButton="true" mnemonicParsing="false" text="Create" />
+                        <Button fx:id="cancel" cancelButton="true" mnemonicParsing="false" text="Cancel" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <VBox alignment="CENTER" prefHeight="37.0" prefWidth="350.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Create Group">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </top>
+</BorderPane>

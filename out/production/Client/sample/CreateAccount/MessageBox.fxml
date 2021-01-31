@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="150.0" prefWidth="350.0" stylesheets="@../Style.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CreateAccount.MessageBoxController">
+   <center>
+      <VBox alignment="CENTER" prefHeight="233.0" prefWidth="450.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" prefHeight="28.0" prefWidth="86.0" text="Your key is">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="label" prefHeight="25.0" prefWidth="51.0" text="1000">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Label text="The key is a unique identity associated with each account.You will nedd this key to Log in" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <VBox alignment="TOP_CENTER" prefHeight="50.0" prefWidth="350.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button defaultButton="true" mnemonicParsing="false" onAction="#close" prefHeight="20.0" prefWidth="60.0" text="okay" />
+         </children>
+      </VBox>
+   </bottom>
+</BorderPane>
